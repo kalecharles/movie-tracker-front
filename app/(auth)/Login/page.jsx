@@ -1,22 +1,38 @@
-export default function Login() {
+import React from 'react';
+
+function LoginPage() {
   return (
-    <>
-      <h3>Login</h3>
-      <form action="">
-        <div className="flex flex-col gap-[16px]">
-          <label htmlFor="username">Username</label>
-          <input type="text" id="username" name="username" required />
-          <label htmlFor="email">Email</label>
-          <input type="email" id="email" name="email" required />
-          <label htmlFor="password">Password</label>
-          <input type="password" id="password" name="password" required />
+    <div className="flex items-center justify-center h-screen bg-gray-800">
+      <div className="bg-white bg-opacity-10 p-8 rounded-lg w-96">
+        <h2 className="text-3xl font-bold text-blue-400 mb-6 text-center">Login to Movie Tracker</h2>
+
+        <div className="mb-4">
+          <input
+            type="text"
+            placeholder="Username or Email"
+            className="w-full p-2 rounded bg-gray-700 text-white border border-gray-600 focus:outline-none focus:border-purple-400"
+          />
         </div>
-        <button type="submit">Register</button>
-        <div className="flex gap-[8px]">
-          <p>Already have an account?</p>
-          <a href="/login">Login</a>
+
+        <div className="mb-6">
+          <input
+            type="password"
+            placeholder="Password"
+            className="w-full p-2 rounded bg-gray-700 text-white border border-gray-600 focus:outline-none focus:border-purple-400"
+          />
         </div>
-      </form>
-    </>
+
+        <button className="w-full bg-gray-700 hover:bg-gray-600 text-white font-semibold py-2 rounded-full">
+          Login
+        </button>
+
+        <div className="flex justify-between mt-4 text-sm text-gray-400">
+          <a href="#" className="hover:text-white">Forgot Password?</a>
+          <a href="#" className="hover:text-white">Register</a>
+        </div>
+      </div>
+    </div>
   );
 }
+
+export default LoginPage;
