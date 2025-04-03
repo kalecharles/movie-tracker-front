@@ -90,14 +90,14 @@ function Page() {
   </div>
   <div className="grid grid-cols-3 gap-4 mt-12">
     <div className="rounded-xl overflow-hidden shadow-lg">
-      <img src="https://via.placeholder.com/300x450" alt="Troll" />
+      <img src="https://image.tmdb.org/t/p/w500/9z4jRr43JdtU66P0iy8h18OyLql.jpg" alt="Troll" />
     </div>
     <div className="rounded-xl overflow-hidden shadow-lg">
-      <img src="https://via.placeholder.com/300x450" alt="Megan" />
+      <img src="https://image.tmdb.org/t/p/w500/xBl5AGw7HXZcv1nNXPlzGgO4Cfo.jpg" alt="Megan" />
     </div>
     <div className="rounded-xl overflow-hidden shadow-lg">
       <img
-        src="https://via.placeholder.com/300x450"
+        src="https://image.tmdb.org/t/p/w500/1NqwE6LP9IEdOZ57NCT51ftHtWT.jpg"
         alt="Puss in Boots"
       />
     </div>
